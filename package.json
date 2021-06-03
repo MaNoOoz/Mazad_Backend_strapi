@@ -1,0 +1,39 @@
+{
+  "name": "store-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production npm run start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "knex": "latest",
+    "sqlite3": "latest",
+    "strapi": "latest",
+    "strapi-admin": "latest",
+    "strapi-connector-bookshelf": "latest",
+    "strapi-plugin-content-manager": "latest",
+    "strapi-plugin-content-type-builder": "latest",
+    "strapi-plugin-email": "latest",
+    "strapi-plugin-upload": "latest",
+    "strapi-plugin-users-permissions": "latest",
+    "strapi-utils": "latest"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "90875cc6-1924-4381-9cc4-ae2aa1a5f4b6"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
