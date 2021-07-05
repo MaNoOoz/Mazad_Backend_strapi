@@ -20,7 +20,7 @@
     "content": {
       "type": "text",
       "required": true,
-      "maxLength": 500,
+      "maxLength": 5000,
       "minLength": 20
     },
     "ad_images": {
@@ -30,9 +30,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "user": {
+      "via": "ads",
       "plugin": "users-permissions",
       "model": "user"
     },
@@ -41,7 +43,21 @@
       "via": "ads"
     },
     "category": {
-      "model": "category"
+      "model": "category",
+      "via": "ads"
+    },
+    "likes": {
+      "type": "biginteger",
+      "default": "0",
+      "unique": false
+    },
+    "comments": {
+      "via": "ad",
+      "collection": "comment"
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": false
     }
   }
 }

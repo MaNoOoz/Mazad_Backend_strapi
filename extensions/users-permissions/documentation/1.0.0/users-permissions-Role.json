@@ -561,7 +561,13 @@
                 "role": {
                   "type": "string"
                 },
-                "userAds": {
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ads": {
                   "type": "array",
                   "items": {
                     "type": "string"

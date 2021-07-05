@@ -1251,7 +1251,38 @@
               }
             }
           },
-          "userAds": {
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "CommentText": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "ad": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ads": {
             "type": "array",
             "items": {
               "required": [
@@ -1285,6 +1316,18 @@
                   }
                 },
                 "category": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contactNumber": {
                   "type": "string"
                 },
                 "published_at": {
@@ -1340,7 +1383,13 @@
           "role": {
             "type": "string"
           },
-          "userAds": {
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ads": {
             "type": "array",
             "items": {
               "type": "string"

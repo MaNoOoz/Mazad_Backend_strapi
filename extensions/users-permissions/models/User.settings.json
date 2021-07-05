@@ -59,7 +59,11 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "userAds": {
+    "comments": {
+      "collection": "comment"
+    },
+    "ads": {
+      "via": "user",
       "collection": "ad"
     }
   }

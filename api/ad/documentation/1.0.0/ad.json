@@ -531,7 +531,7 @@
           },
           "content": {
             "type": "string",
-            "maxLength": 500,
+            "maxLength": 5000,
             "minLength": 20
           },
           "ad_images": {
@@ -641,7 +641,13 @@
               "role": {
                 "type": "string"
               },
-              "userAds": {
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ads": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -697,14 +703,14 @@
               "title": {
                 "type": "string"
               },
+              "CategoryImage": {
+                "type": "string"
+              },
               "ads": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "CategoryImage": {
-                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -716,6 +722,44 @@
                 "type": "string"
               }
             }
+          },
+          "likes": {
+            "type": "integer",
+            "default": "0"
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "CommentText": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "ad": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "contactNumber": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -736,7 +780,7 @@
           },
           "content": {
             "type": "string",
-            "maxLength": 500,
+            "maxLength": 5000,
             "minLength": 20
           },
           "user": {
@@ -749,6 +793,19 @@
             }
           },
           "category": {
+            "type": "string"
+          },
+          "likes": {
+            "type": "integer",
+            "default": "0"
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contactNumber": {
             "type": "string"
           },
           "published_at": {

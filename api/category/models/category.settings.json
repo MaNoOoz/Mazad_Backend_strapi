@@ -14,11 +14,12 @@
     "title": {
       "type": "string"
     },
-    "ads": {
-      "collection": "ad"
-    },
     "CategoryImage": {
       "type": "string"
+    },
+    "ads": {
+      "via": "category",
+      "collection": "ad"
     }
   }
 }

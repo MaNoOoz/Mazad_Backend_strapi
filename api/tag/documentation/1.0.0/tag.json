@@ -561,6 +561,18 @@
                 "category": {
                   "type": "string"
                 },
+                "likes": {
+                  "type": "integer"
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contactNumber": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
