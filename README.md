@@ -15,9 +15,14 @@ youtube : https://www.youtube.com/channel/UCYuo5V0GKQGCStTQBGJQNVQ
 
 Getting Started
 
-
 Clone the repository 
+   Run the server with 
+   
+      npm develop 
+      
+
 Contribute : 
+
     Fork it
     Create your feature branch: git checkout -b feature/my-new-feature
     Commit your changes: git commit -am 'Added some feature'
