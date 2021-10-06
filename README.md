@@ -15,10 +15,11 @@ youtube : https://www.youtube.com/channel/UCYuo5V0GKQGCStTQBGJQNVQ
 
 Getting Started
 
-Clone the repository 
-   Run the server with 
+
+ clone the repository 
+ Run the server in development mode 
    
-      npm develop 
+      npm run develop 
       
 
 Contribute : 
